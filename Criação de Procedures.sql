@@ -39,10 +39,11 @@ USE `insight_place`;
 DROP procedure IF EXISTS `insight_place`.`novoAluguel_23`;
 DELIMITER $$
 USE `insight_place`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `novoAluguel_23`(vAluguel VARCHAR (255), vCliente VARCHAR (255), vHospedagem VARCHAR (255), vDataInicio DATE, vDataFinal DATE, vPrecoTotal DECIMAL )
+CREATE DEFINER=`root`@`localhost` PROCEDURE `novoAluguel_23`
+(vAluguel VARCHAR (255), vCliente VARCHAR (255), vHospedagem VARCHAR (255), vDataInicio DATE, vDataFinal DATE, vPrecoTotal DECIMAL (10,2))
 BEGIN
 	
-    SELECT vAluguel, vCliente, vHospedagem, vDataInicio, vDataFinal, vPrecoTotal;
-END$$
+    INSERT INTO reservas VALUES (vAluguel, vCliente, vHospedagem, vDataInicio, vDataFinal, vPrecoTotal);
+END$$novoAluguel_23
 
 DELIMITER ;
