@@ -43,7 +43,8 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `novoAluguel_23`
 (vAluguel VARCHAR (255), vCliente VARCHAR (255), vHospedagem VARCHAR (255), vDataInicio DATE, vDataFinal DATE, vPrecoTotal DECIMAL (10,2))
 BEGIN
 	
-    INSERT INTO reservas VALUES (vAluguel, vCliente, vHospedagem, vDataInicio, vDataFinal, vPrecoTotal);
+    INSERT INTO reservas  (reserva_id, cliente_id, hospedagem_id, data_inicio, data_fim, preco_total)
+   VALUES (vAluguel, vCliente, vHospedagem, vDataInicio, vDataFinal, vPrecoTotal);
 END$$novoAluguel_23
 
 DELIMITER ;
