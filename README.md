@@ -85,9 +85,4 @@ Este projeto tem como objetivo configurar a base de dados inicial da empresa **I
 
 A **Insight Places** é uma empresa que atua no ramo de gestão de hospedagens e aluguéis de curta duração. Sua principal necessidade é automatizar e escalar o processo de entrada de novos aluguéis com segurança e eficiência.
 
----
 
-## 📞 Contato
-
-Projeto desenvolvido por [Seu Nome]  
-Email: seu.email@exemplo.com
