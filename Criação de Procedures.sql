@@ -32,3 +32,17 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+
+
+USE `insight_place`;
+DROP procedure IF EXISTS `insight_place`.`novoAluguel_23`;
+DELIMITER $$
+USE `insight_place`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `novoAluguel_23`(vAluguel VARCHAR (255), vCliente VARCHAR (255), vHospedagem VARCHAR (255), vDataInicio DATE, vDataFinal DATE, vPrecoTotal DECIMAL )
+BEGIN
+	
+    SELECT vAluguel, vCliente, vHospedagem, vDataInicio, vDataFinal, vPrecoTotal;
+END$$
+
+DELIMITER ;
