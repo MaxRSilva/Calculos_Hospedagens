@@ -30,6 +30,7 @@ BEGIN
     IF vNumCliente > 1 THEN 
         SET vMensagem = 'Este cliente não pode ser incluido pelo nome';
         SELECT vMensagem;
+    
     ELSE 
         SET vDias = DATEDIFF(vDataFinal, vDataInicio);
         SET vPrecoTotal = vDias * vPrecoUnitario;
